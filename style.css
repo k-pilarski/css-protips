@@ -21,8 +21,42 @@ body {
     justify-content: space-around;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
 .btn-for-border {
     width: 10em;
     height: 10em;
     border-image: linear-gradient(red, blue) 1; /* border gradient in css */ 
 }
+.custom-text-input-color {  /* custom cursos in input */
+    caret-color: red;
+    outline: none;
+}
+
+.custom-text-input-color:focus {   /* custom input border after click */
+    border: 2px solid red;
+    box-shadow: 0 0 5px red;
+}
+
+main > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-range-input-color { /* custom range color */
+    accent-color: red;
+}
+
+
+/* 
+    if u wanna custom your img shape use it:
+        https://www.cssportal.com/css-clip-path-generator/
+    for exaple:
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+*/

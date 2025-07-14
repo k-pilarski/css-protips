@@ -53,6 +53,13 @@ main > form {
     accent-color: red;
 }
 
+.neon {
+    width: 12em;
+    height: 12em;
+    border: solid 1em;
+    border-image: linear-gradient(red, blue) 1;
+}
+
 
 /* 
     if u wanna custom your img shape use it:
